@@ -16,7 +16,7 @@ const pool = new Pool({
 
 app.get('/status', (req, res) => res.send({ status: "I'm up and running" }));
 
-app.listen(port, () => console.log(`Node.js Application is listening on port ${port}!`));
+app.listen(port, () => console.log(`Node.js Application is now listening on port ${port}!`));
 
 app.post('/insert', (req, res) => {
   const { username, email, age } = req.query;
